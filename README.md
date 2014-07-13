@@ -3,8 +3,7 @@ clrs
 
 Color lib for HTML/JS. Lots of easy ways to generate colors for use in CSS or Canvas drawing.
 
-Static Methods. These return an instance of clrs.color, which can be used in any JavaScript code that requires a color string.
----
+### Static Methods. These return an instance of clrs.color, which can be used in any JavaScript code that requires a color string.
 
 	rgba(r, g, b, a) // define a color using red, green, blue and alpha channels. r, g, b are 0 to 255, a is 0 to 1.
 
@@ -32,15 +31,14 @@ Static Methods. These return an instance of clrs.color, which can be used in any
 
 	lerp(colorA, colorB, t) // defines a new color which is linearly interplated between colorA and colorB. t is a normal value usually between 0 and 1. 
 
-Examples
----
+### Examples
 
 	document.body.style.backgroundColor = clrs.rgb(255, 128, 0);
 
 	context2d.fillStyle = clrs.randomRGB();
 
-Instance Methods. These exist on instanced of color objects returned from any of the static methods.
----
+### Instance Methods. These exist on instanced of color objects returned from any of the static methods.
+
 
 	bind(object, property) // binds this color to a property of an object so that any time this color changes, the property will be re-set.
 	update() // updates any bound property. usually only called internally.
@@ -56,8 +54,7 @@ Instance Methods. These exist on instanced of color objects returned from any of
 	setRGBA(r, g, b, a) // sets the r, g, b and a channels of this color. chainable.
 	toString() // returns string representation of this color. 
 
-Examples
----
+### Examples
 
 	// create a color object
 	var clr = clrs.rgb(255, 0, 255);
