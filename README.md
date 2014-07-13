@@ -3,6 +3,8 @@ clrs
 
 Color lib for HTML/JS. Lots of easy ways to generate colors for use in CSS or Canvas drawing.
 
+This is really early code, but should be useful to some people. I haven't tested it extensively in multiple browsers, platforms, etc. so use at your own risk. Appreciate any feedback or improvements.
+
 ### Static Methods. These return an instance of clrs.color, which can be used in any JavaScript code that requires a color string.
 
 	rgba(r, g, b, a) // define a color using red, green, blue and alpha channels. r, g, b are 0 to 255, a is 0 to 1.
