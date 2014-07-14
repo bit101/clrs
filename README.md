@@ -80,3 +80,14 @@ Note: use of bind is not necessary, but makes things easier if you are going to 
 or simply:
 
 	context.fillStyle = clrs.rgb(255, 0, 255);
+
+### Bugs
+
+In Chrome and Safari on Mac, context2d's fillStyle will not automatically call toString on the color object. Workarounds are:
+
+1. Use the bind method. This calls toString internally.
+2. Use toString explicitly:
+
+	context.fillStyle = clrs.randomRGB().toString();
+	
+	
